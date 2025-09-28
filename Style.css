@@ -1,0 +1,83 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+p {
+    text-align: center;
+    color: #555;
+}
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.semana {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+/* Estilos para Impressão */
+@media print {
+    @page {
+        size: A4;
+        margin: 2cm;
+    }
+    body {
+        background-color: white;
+        margin: 0;
+    }
+    .container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .controls, h1, h2, p, textarea {
+        display: none; 
+    }
+    .semana {
+        border: none;
+        box-shadow: none;
+        page-break-after: always;
+        font-size: 9pt;
+        padding: 0;
+    }
+}
